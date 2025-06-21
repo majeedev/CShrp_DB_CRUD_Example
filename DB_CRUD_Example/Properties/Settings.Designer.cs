@@ -26,8 +26,8 @@ namespace DB_CRUD_Example.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=G:\\C#\\DB_CRUD_Example\\DB_CRUD" +
-            "_Example\\DB_CRUD_Example\\Database1.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"G:\\C#\\Visual Pogramming\\Lab " +
+            "One_DB_Coneection\\DB_CRUD_Example\\Database1.mdf\";Integrated Security=True")]
         public string CRUD_dbConnectionString {
             get {
                 return ((string)(this["CRUD_dbConnectionString"]));

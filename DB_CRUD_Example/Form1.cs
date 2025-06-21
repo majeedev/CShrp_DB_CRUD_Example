@@ -9,13 +9,13 @@ namespace DB_CRUD_Example
         public Form1()
         {
             InitializeComponent();
-            dgv_user_info.DataSource = User.GetUsers();
-         
+
+           dgv_user_info.DataSource = User.GetUsers();
+
           
         }
 
-
-
+       
 
 
         private void but_add_Click_1(object sender, EventArgs e)
@@ -81,6 +81,7 @@ namespace DB_CRUD_Example
         {
             ClearControls();
         }
+
         private void ClearControls()
         {
             foreach (Control control in pnl_controls.Controls)
@@ -88,6 +89,7 @@ namespace DB_CRUD_Example
                 control.Text = "";
             }
         }
+
         private void dgv_user_info_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             var index = e.RowIndex;

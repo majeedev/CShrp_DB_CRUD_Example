@@ -5,11 +5,10 @@ using MySql.Data.MySqlClient;
 using System;
 namespace DB_CRUD_Example
 {
+  
     class User
     {
 
-
-        static string myConn = Properties.Settings.Default.CRUD_dbConnectionString;
         public string Id { get; set; }
         public string UserId { get; set; }
         public string UserPass { get; set; }
@@ -24,7 +23,7 @@ namespace DB_CRUD_Example
         public static DataTable GetUsers()
         {
             DataTable datatable = new DataTable();
-            using (SqlConnection con = new SqlConnection(myConn))
+            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(selectQuery, con))
@@ -45,7 +44,7 @@ namespace DB_CRUD_Example
         public bool InsertUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(myConn))
+            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(InserQuery, con))
@@ -62,7 +61,7 @@ namespace DB_CRUD_Example
         public bool UpdateUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(myConn))
+            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(UpdateQuery, con))
@@ -80,7 +79,7 @@ namespace DB_CRUD_Example
         public bool DeletetUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(myConn))
+            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(DeleteQuery, con))

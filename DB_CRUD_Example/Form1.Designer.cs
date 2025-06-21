@@ -45,7 +45,6 @@
             this.tex_RePassword = new System.Windows.Forms.TextBox();
             this.tex_Email = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user_info)).BeginInit();
             this.pnl_controls.SuspendLayout();
@@ -54,9 +53,9 @@
             // dgv_user_info
             // 
             this.dgv_user_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_user_info.Location = new System.Drawing.Point(16, 270);
+            this.dgv_user_info.Location = new System.Drawing.Point(6, 222);
             this.dgv_user_info.Name = "dgv_user_info";
-            this.dgv_user_info.Size = new System.Drawing.Size(490, 150);
+            this.dgv_user_info.Size = new System.Drawing.Size(537, 198);
             this.dgv_user_info.TabIndex = 9;
             this.dgv_user_info.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_user_info_RowHeaderMouseClick);
             // 
@@ -78,7 +77,7 @@
             // 
             // but_cleare
             // 
-            this.but_cleare.Location = new System.Drawing.Point(359, 229);
+            this.but_cleare.Location = new System.Drawing.Point(463, 163);
             this.but_cleare.Name = "but_cleare";
             this.but_cleare.Size = new System.Drawing.Size(75, 23);
             this.but_cleare.TabIndex = 8;
@@ -88,7 +87,7 @@
             // 
             // but_delete
             // 
-            this.but_delete.Location = new System.Drawing.Point(278, 229);
+            this.but_delete.Location = new System.Drawing.Point(463, 134);
             this.but_delete.Name = "but_delete";
             this.but_delete.Size = new System.Drawing.Size(75, 23);
             this.but_delete.TabIndex = 7;
@@ -98,7 +97,7 @@
             // 
             // but_update
             // 
-            this.but_update.Location = new System.Drawing.Point(197, 229);
+            this.but_update.Location = new System.Drawing.Point(463, 103);
             this.but_update.Name = "but_update";
             this.but_update.Size = new System.Drawing.Size(75, 23);
             this.but_update.TabIndex = 6;
@@ -108,7 +107,7 @@
             // 
             // but_add
             // 
-            this.but_add.Location = new System.Drawing.Point(116, 229);
+            this.but_add.Location = new System.Drawing.Point(463, 75);
             this.but_add.Name = "but_add";
             this.but_add.Size = new System.Drawing.Size(75, 23);
             this.but_add.TabIndex = 5;
@@ -119,7 +118,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 210);
+            this.label7.Location = new System.Drawing.Point(3, 200);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 17;
@@ -128,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 177);
+            this.label4.Location = new System.Drawing.Point(3, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 18;
@@ -137,7 +136,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 124);
+            this.label2.Location = new System.Drawing.Point(3, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 20;
@@ -146,7 +145,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 99);
+            this.label5.Location = new System.Drawing.Point(3, 96);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 21;
@@ -175,9 +174,9 @@
             this.pnl_controls.Controls.Add(this.tex_RePassword);
             this.pnl_controls.Controls.Add(this.tex_Email);
             this.pnl_controls.Controls.Add(this.tex_address);
-            this.pnl_controls.Location = new System.Drawing.Point(120, 70);
+            this.pnl_controls.Location = new System.Drawing.Point(110, 70);
             this.pnl_controls.Name = "pnl_controls";
-            this.pnl_controls.Size = new System.Drawing.Size(342, 146);
+            this.pnl_controls.Size = new System.Drawing.Size(352, 146);
             this.pnl_controls.TabIndex = 26;
             // 
             // tex_RePassword
@@ -198,38 +197,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 151);
+            this.label3.Location = new System.Drawing.Point(3, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Re_Enter Password";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 52);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 15);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "User information";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(196, 30);
+            this.label1.Location = new System.Drawing.Point(217, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 22);
+            this.label1.Size = new System.Drawing.Size(136, 22);
             this.label1.TabIndex = 16;
-            this.label1.Text = "User Acount ";
+            this.label1.Text = "Empolyee Info";
             // 
             // Form1
             // 
             this.AcceptButton = this.but_add;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 424);
+            this.ClientSize = new System.Drawing.Size(550, 424);
             this.Controls.Add(this.dgv_user_info);
             this.Controls.Add(this.but_cleare);
             this.Controls.Add(this.but_delete);
@@ -241,10 +230,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pnl_controls);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "9";
+            this.Text = "Employee_info";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user_info)).EndInit();
             this.pnl_controls.ResumeLayout(false);
             this.pnl_controls.PerformLayout();
@@ -256,7 +244,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgv_user_info;
-        private System.Windows.Forms.Label lb_id;
         private System.Windows.Forms.TextBox tex_address;
         private System.Windows.Forms.Button but_cleare;
         private System.Windows.Forms.Button but_delete;
@@ -272,9 +259,8 @@
         private System.Windows.Forms.TextBox tex_RePassword;
         private System.Windows.Forms.TextBox tex_Email;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-
+        private System.Windows.Forms.Label lb_id;
     }
 }
 
