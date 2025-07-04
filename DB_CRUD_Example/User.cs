@@ -23,15 +23,15 @@ namespace DB_CRUD_Example
         public static DataTable GetUsers()
         {
             DataTable datatable = new DataTable();
-            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
+            using (MySqlConnection con = new MySqlConnection(DBConnection.mySqlConnectionString))
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(selectQuery, con))
+                using (MySqlCommand com = new MySqlCommand(selectQuery, con))
                 {
                     
                     Console.Write(selectQuery);
                      
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(com))
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(com))
                     {
                         adapter.Fill(datatable);
                     }
@@ -44,10 +44,10 @@ namespace DB_CRUD_Example
         public bool InsertUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
+            using (MySqlConnection con = new MySqlConnection(DBConnection.mySqlConnectionString))
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(InserQuery, con))
+                using (MySqlCommand com = new MySqlCommand(InserQuery, con))
                 {
                     com.Parameters.AddWithValue("@UserId", user.UserId);
                     com.Parameters.AddWithValue("@UserPass", user.UserPass);
@@ -61,10 +61,10 @@ namespace DB_CRUD_Example
         public bool UpdateUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
+            using (MySqlConnection con = new MySqlConnection(DBConnection.mySqlConnectionString))
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(UpdateQuery, con))
+                using (MySqlCommand com = new MySqlCommand(UpdateQuery, con))
                 {
                     com.Parameters.AddWithValue("@Id", user.Id);
                     com.Parameters.AddWithValue("@UserId", user.UserId);
@@ -79,10 +79,10 @@ namespace DB_CRUD_Example
         public bool DeletetUser(User user)
         {
             int rows;
-            using (SqlConnection con = new SqlConnection(DBConnection.sqlServerConnString))
+            using (MySqlConnection con = new MySqlConnection(DBConnection.mySqlConnectionString))
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(DeleteQuery, con))
+                using (MySqlCommand com = new MySqlCommand(DeleteQuery, con))
                 {
                     com.Parameters.AddWithValue("@ID", user.Id);
                     rows = com.ExecuteNonQuery();
